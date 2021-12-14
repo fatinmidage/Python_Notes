@@ -2,4 +2,4 @@
  
 ## 查看内置函数
 
-> **dir(\__builtins__)**
+> **dir(\_\_builtins__)**
