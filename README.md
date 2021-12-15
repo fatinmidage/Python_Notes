@@ -23,4 +23,6 @@
 > r'C:\Users\fg104\Documents\GitHub\Python_Notes'
 
 ## 判断变量类型
->isinstance(object, classinfo)
+> isinstance(object, classinfo)
+> 例如：
+> isinstance('abc',str)
