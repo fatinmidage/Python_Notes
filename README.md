@@ -87,7 +87,7 @@
 > ['Timer', 'timeit', 'repeat', 'default_timer']
 >
 > 显示模块所有的对外成员
-
+> 
 > **编写较规范的一个通用模块时，建议都需要定义\_\_all__属性**
 
 > **timeit.\_\_file__**
