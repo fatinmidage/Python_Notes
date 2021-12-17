@@ -95,3 +95,12 @@
 > 'C:\\Users\\fg104\\AppData\\Local\\Programs\\Python\\Python310\\lib\\timeit.py'
 >
 > 显示模块的源代码地址
+
+## urllib.request常用操作
+> import urllib.request
+> 
+> response = urllib.request.urlopen(urladdress)
+> 
+> html = response.read()
+> 
+> html = html.decode('utf-8')
