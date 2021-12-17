@@ -75,20 +75,23 @@
 ## 关于帮助
 > **dir(timeit)**
 > 
->['Timer', '\_\_all__', '\_\_builtins__', '\_\_cached__', '\_\_doc__', '\_\_file__', '\_\_loader__', '\_\_name__', '\_\_package__', '\_\_spec__', '_globals', 'default_number', 'default_repeat', 'default_timer', 'dummy_src_name', 'gc', 'itertools', 'main', 'reindent', 'repeat', 'sys', 'template', 'time', 'timeit']
+> ['Timer', '\_\_all__', '\_\_builtins__', '\_\_cached__', '\_\_doc__', '\_\_file__', '\_\_loader__', '\_\_name__', '\_\_package__', '\_\_spec__', '_globals', 'default_number', 'default_repeat', 'default_timer', 'dummy_src_name', 'gc', 'itertools', 'main', 'reindent', 'repeat', 'sys', 'template', 'time', 'timeit']
 >
 > 显示模块的所有属性和方法
 
+> **print(timeit.\_\_doc__)**
+> 打印该模块的帮助文档
+
 > **timeit.\_\_all__**
 > 
->['Timer', 'timeit', 'repeat', 'default_timer']
+> ['Timer', 'timeit', 'repeat', 'default_timer']
 >
->显示模块所有的对外成员
+> 显示模块所有的对外成员
 
->**编写较规范的一个通用模块时，建议都需要定义\_\_all__属性**
+> **编写较规范的一个通用模块时，建议都需要定义\_\_all__属性**
+
+> **timeit.\_\_file__**
 >
->**timeit.\_\_file__**
+> 'C:\\Users\\fg104\\AppData\\Local\\Programs\\Python\\Python310\\lib\\timeit.py'
 >
->'C:\\Users\\fg104\\AppData\\Local\\Programs\\Python\\Python310\\lib\\timeit.py'
->
->显示模块的源代码地址
+> 显示模块的源代码地址
