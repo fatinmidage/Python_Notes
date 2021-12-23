@@ -55,6 +55,51 @@
 > 
 > - **index(sub)**：查找sub字符串的索引，找不到报错
 
+#### 替换
+> - **expandtabs(4)**：用4个空格代替tab
+> 
+> - **replace(old,new,count=-1)**：
+
+#### 截取
+> - **lstrip(chars=None)**：删除左边的**字符**
+> 
+> - **rstrip(chars=None)**：删除右边的**字符**
+> 
+> - **strip(chars=None)**：删除左右的**字符**
+> 
+> 示例：
+> 
+> > \>\>\>"www.ilovefishc.com".lstrip(".w")
+> >
+> > \>\>\>'ilovefishc.com'
+> >
+> > \>\>\>"我爱中国".lstrip("爱我")
+> >
+> > \>\>\>'中国'
+> 
+> - **removeprefix(str)**：删除前缀指定**字符串**
+> 
+> - **removesuffix(str)**：删除后缀指定**字符串**
+
+#### 判断
+> - **startwith(suffix)**：判断字符串是否以suffix字符串开头
+> 
+> - **endwith(suffix)**：判断字符串是否以suffix字符串结尾
+> 
+> - **istitle()**：是否所有单词的首字母大写
+> 
+> - **isupper()**：是否所有字母都是大写
+> 
+> - **islower()**:是否所有字母都是小写
+> 
+> - **isalpha()**：字符串是否只有字母
+> 
+> - **isspace()**：字符串是否空表字符串(tab、\n也算是空白)
+> 
+> - **isprintable()**：字符串是否全都是可打印的字符
+> 
+> - **isdigit()**：是否是数字
+
 #### 大小写处理
 > - **capitalize()**：字符串首字母大写,其他字母小写
 > 
