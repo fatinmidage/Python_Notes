@@ -47,6 +47,29 @@
 > 
 > r'C:\Users\fg104\Documents\GitHub\Python_Notes'
 
+### 常用函数
+#### 大小写处理
+> - **capitalize()**：字符串首字母大写,其他字母小写
+> 
+> - **title()**：把字符串中的每个单词首字母改为大写
+> 
+> - **casefold()**：所有字母转为小写(不仅英语)
+> 
+> - **swapcase()**：大小写翻转
+> 
+> - **upper()**：所有的字母改为大写
+> 
+> - **lower()**：所有的字母改为小写(只针对英语)
+
+#### 对齐
+> - **center(width,fillchar='')**：居中
+> 
+> - **ljust(width,fillchar='')**:左对齐
+> 
+> - **rjust(width,fillchar='')**：右对齐
+> 
+> - **zfill(width)**：用0填充字符串的左侧
+
 ## 关于浮点数
 > import decimal
 > 
@@ -119,6 +142,13 @@
 > 
 > listA.reverse()
 
+### 打包和解包
+> _ = [4, '元素', 7]
+> 
+> a, b, c = _
+> 
+> a,b,c会分别等于_的三个元素
+
 ### 切片
 > listA = ['a', 'b', 'c', 'd']
 > 
@@ -150,7 +180,14 @@
 > 
 > 新列表 = [(目标)表达式 for 目标 in 原列表 if 表达式]
 
+## 元组
 
+元组中的列表是可以被修改的
+
+## 条件分支和循环
+### 条件表达式
+
+> _ = a if a < b else b
 
 ## urllib.request常用操作
 > import urllib.request
