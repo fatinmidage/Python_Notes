@@ -45,27 +45,27 @@
 ### 原始字符串
 > 字符串前面加一个r，例如：
 > 
-> r'C:\Users\fg104\Documents\GitHub\Python_Notes'
+> r'C:\Users\Documents\GitHub\Python_Notes'
 
 ### 常用函数
 #### 查找
-> - **count(sub)**：统计sub字符串的出现次数(可以设置开始和结束位置)
+> - **str.count(sub)**：统计sub字符串的出现次数(可以设置开始和结束位置)
 > 
-> - **find(sub)**：查找sub字符串的索引，找不到返回-1
+> - **str.find(sub)**：查找sub字符串的索引，找不到返回-1
 > 
-> - **index(sub)**：查找sub字符串的索引，找不到报错
+> - **str.index(sub)**：查找sub字符串的索引，找不到报错
 
 #### 替换
-> - **expandtabs(4)**：用4个空格代替tab
+> - **str.expandtabs(4)**：用4个空格代替tab
 > 
-> - **replace(old,new,count=-1)**：
+> - **str.replace(old,new,count=-1)**：
 
 #### 截取
-> - **lstrip(chars=None)**：删除左边的**字符**
+> - **str.lstrip(chars=None)**：删除左边的**字符**
 > 
-> - **rstrip(chars=None)**：删除右边的**字符**
+> - **str.rstrip(chars=None)**：删除右边的**字符**
 > 
-> - **strip(chars=None)**：删除左右的**字符**
+> - **str.strip(chars=None)**：删除左右的**字符**
 > 
 > 示例：
 > 
@@ -77,50 +77,65 @@
 > >
 > > \>\>\>'中国'
 > 
-> - **removeprefix(str)**：删除前缀指定**字符串**
+> - **str.removeprefix(str)**：删除前缀指定**字符串**
 > 
-> - **removesuffix(str)**：删除后缀指定**字符串**
+> - **str.removesuffix(str)**：删除后缀指定**字符串**
+
+#### 分割
+> - **str.split('.')**：分割字符串，str指定分割符
+
+#### 拼接
+> - **'.'.join(list[str])**：比“+”更有效率，与“+”结果一样
 
 #### 判断
-> - **startwith(suffix)**：判断字符串是否以suffix字符串开头
+> - **str.startwith(suffix)**：判断字符串是否以suffix字符串开头
 > 
-> - **endwith(suffix)**：判断字符串是否以suffix字符串结尾
+> - **str.endwith(suffix)**：判断字符串是否以suffix字符串结尾
 > 
-> - **istitle()**：是否所有单词的首字母大写
+> - **str.istitle()**：是否所有单词的首字母大写
 > 
-> - **isupper()**：是否所有字母都是大写
+> - **str.isupper()**：是否所有字母都是大写
 > 
-> - **islower()**:是否所有字母都是小写
+> - **str.islower()**:是否所有字母都是小写
 > 
-> - **isalpha()**：字符串是否只有字母
+> - **str.isalpha()**：字符串是否只有字母
 > 
-> - **isspace()**：字符串是否空表字符串(tab、\n也算是空白)
+> - **str.isspace()**：字符串是否空表字符串(tab、\n也算是空白)
 > 
-> - **isprintable()**：字符串是否全都是可打印的字符
+> - **str.isprintable()**：字符串是否全都是可打印的字符
 > 
-> - **isdigit()**：是否是数字
+> - **str.isdigit()**：是否是数字
 
 #### 大小写处理
-> - **capitalize()**：字符串首字母大写,其他字母小写
+> - **str.capitalize()**：字符串首字母大写,其他字母小写
 > 
-> - **title()**：把字符串中的每个单词首字母改为大写
+> - **str.title()**：把字符串中的每个单词首字母改为大写
 > 
-> - **casefold()**：所有字母转为小写(不仅英语)
+> - **str.casefold()**：所有字母转为小写(不仅英语)
 > 
-> - **swapcase()**：大小写翻转
+> - **str.swapcase()**：大小写翻转
 > 
-> - **upper()**：所有的字母改为大写
+> - **str.upper()**：所有的字母改为大写
 > 
-> - **lower()**：所有的字母改为小写(只针对英语)
+> - **str.lower()**：所有的字母改为小写(只针对英语)
 
 #### 对齐
-> - **center(width,fillchar='')**：居中
+> - **str.center(width,fillchar='')**：居中
 > 
-> - **ljust(width,fillchar='')**:左对齐
+> - **str.ljust(width,fillchar='')**:左对齐
 > 
-> - **rjust(width,fillchar='')**：右对齐
+> - **str.rjust(width,fillchar='')**：右对齐
 > 
-> - **zfill(width)**：用0填充字符串的左侧
+> - **str.zfill(width)**：用0填充字符串的左侧
+
+### 格式化字符串
+> \>\>\>"1+2={},2的平方是{}".format(3,2\*2)
+> 
+> \>\>\>'1+2=3,2的平方是4'
+> 
+> \>\>\>'我叫{name},我爱{fav}'.format(name="小甲鱼",fav="小姐姐")
+> 
+> \>\>\>'我叫小甲鱼,我爱小姐姐'
 
 ## 关于浮点数
 > import decimal
@@ -141,6 +156,8 @@
 > 只有当这个变量是临时的，一次性的，才建议用_
 
 ### 判断变量类型
+> type(a)
+> 
 > isinstance(object, classinfo)
 > 
 > 例如：
