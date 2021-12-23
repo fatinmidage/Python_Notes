@@ -35,6 +35,7 @@
 
 ### 显示模块的源代码地址
 > **timeit.\_\_file__**
+> 
 >'C:\\Users\\fg104\\AppData\\Local\\Programs\\Python\\Python310\\lib\\timeit.py'
 >
 
@@ -48,12 +49,22 @@
 
 ## 关于浮点数
 > import decimal
+> 
 > a = decimal.Decimal('0.1')
+> 
 > b = decimal.Decimal('0.2')
+> 
 > a+b
+> 
 > Decimal('0.3')
 
 ## 关于变量
+
+### 临时变量
+> _
+> 
+> 只有当这个变量是临时的，一次性的，才建议用_
+
 ### 判断变量类型
 > isinstance(object, classinfo)
 > 
@@ -72,7 +83,7 @@
 > 
 > 　　if i == 2:
 > 
-> 　　　break
+> 　　　　break
 > 
 > 　　i += 1
 > 
@@ -83,40 +94,61 @@
 > **当break出循环后，else语句将不会被执行**
 
 ## 列表list
-### 添加列表元素的三种方法
+### 增加元素
 > listA.append()
 > 
 > listA.extend()
 > 
 > listA.insert()
 
-### 删除列表元素的三种方法
+### 删除元素
 > listA.remove()
 > 
 > del listA[2]
 > 
 > listA.pop()
 
-### 列表切片
+### 统计元素
+> listA.count(item)
+
+### 查元素的索引值
+> listA.index(item)
+
+### 排序以及反转
+> listA.sort(reverse = False)
+> 
+> listA.reverse()
+
+### 切片
 > listA = ['a', 'b', 'c', 'd']
 > 
 > listB = listA # 等号是引用的形式
 > 
 > listC = listA[:] # [:]是一个副本，所以这个等号是赋值的形式
+
+### 步进跨度
+> a = [1,2,3,4,5]
 > 
-> del listA[2]
+> a[0:5:2]
 > 
-> listA
+> [1,3,5]
+
+### 列表倒叙
+> listA[::-1]
+
+### 二维及以上的列表需要用深拷贝
+> import copy
 > 
-> ['a', 'b', 'd']
+> listB = copy.deepcopy(listA)
+
+### 列表推导式
+> **当需要对列表中的元素进行修改时**
 > 
-> listB
+> listB = [i*2 for i in listA]
 > 
-> ['a', 'b', 'd'] # listB引用的形式，所以listB也是跟着改变的
+> 新列表 = [(目标)表达式 for 目标 in 原列表]
 > 
-> listC
-> 
-> ['a', 'b', 'c', 'd'] # listC是值的形式，不受影响
+> 新列表 = [(目标)表达式 for 目标 in 原列表 if 表达式]
 
 
 
@@ -131,4 +163,5 @@
 
 ## 随机数
 > import random
+> 
 > num = random.randint(1,10)
