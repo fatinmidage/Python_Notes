@@ -46,6 +46,13 @@
 > 
 > r'C:\Users\fg104\Documents\GitHub\Python_Notes'
 
+## 关于浮点数
+> import decimal
+> a = decimal.Decimal('0.1')
+> b = decimal.Decimal('0.2')
+> a+b
+> Decimal('0.3')
+
 ## 关于变量
 ### 判断变量类型
 > isinstance(object, classinfo)
@@ -56,6 +63,17 @@
 
 ### 全局变量无法在函数内修改
 
+## 关于循环
+> i = 1
+> while i < 5:
+> 　　print("循环内，i的值是",i)
+> 　　if i == 2:
+> 　　　break
+> 　　i += 1
+> else:
+> 　　print("循环外，i的值是",i)
+> 
+> **当break出循环后，else语句将不会被执行**
 
 ## 列表list
 ### 添加列表元素的三种方法
@@ -103,3 +121,7 @@
 > html = response.read()
 > 
 > html = html.decode('utf-8')
+
+## 随机数
+> import random
+> num = random.randint(1,10)
