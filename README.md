@@ -48,6 +48,13 @@
 > r'C:\Users\fg104\Documents\GitHub\Python_Notes'
 
 ### 常用函数
+#### 查找
+> - **count(sub)**：统计sub字符串的出现次数(可以设置开始和结束位置)
+> 
+> - **find(sub)**：查找sub字符串的索引，找不到返回-1
+> 
+> - **index(sub)**：查找sub字符串的索引，找不到报错
+
 #### 大小写处理
 > - **capitalize()**：字符串首字母大写,其他字母小写
 > 
