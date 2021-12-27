@@ -368,17 +368,24 @@
 
 ## 解包参数
 > def myfun(a,b,c):
+> 
 > 　　pass
 > 
+> 
 > args = ('a',2,'4')
+> 
 > myfun(*args)
 
 
 ### 多个返回值
 > 函数可以具有多个返回值，但实际上函数是把它们打包成一个元组
+> 
 > \>\>\> def myfun():
+> 
 > \>\>\> 　　return 1,2,3
+> 
 > \>\>\>
+> 
 > \>\>\> x,y,z = myfun()
     
 ## urllib.request常用操作
