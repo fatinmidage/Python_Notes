@@ -387,15 +387,7 @@
 > \>\>\>
 > 
 > \>\>\> x,y,z = myfun()
-    
-## urllib.request常用操作
-> import urllib.request
-> 
-> response = urllib.request.urlopen(urladdress)
-> 
-> html = response.read()
-> 
-> html = html.decode('utf-8')
+
 
 ## 随机数
 > import random
